@@ -1,5 +1,3 @@
-
-
 module Mustafa
   module StructureLine
     module Utils

@@ -1,3 +1,5 @@
+require_relative '../../element_builders/segment_calculation'
+
 module Mustafa
   module StructureLine
     module Contractor

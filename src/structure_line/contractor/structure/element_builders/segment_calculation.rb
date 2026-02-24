@@ -1,3 +1,5 @@
+require_relative '../../../utils/line_relation'
+
 module Mustafa
   module StructureLine
     module Contractor

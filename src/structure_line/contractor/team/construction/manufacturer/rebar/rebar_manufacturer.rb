@@ -1,3 +1,5 @@
+require_relative '../../../design/element_designer/component/rebar/description'
+
 module Mustafa
   module StructureLine
     module Contractor

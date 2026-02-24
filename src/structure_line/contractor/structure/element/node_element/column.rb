@@ -1,3 +1,5 @@
+require_relative '../element'
+require_relative 'node_element'
 module Mustafa
   module StructureLine
     module Contractor
@@ -5,6 +7,7 @@ module Mustafa
         module Element
           module NodeElement
             class Column < BaseElement
+              include Element
               include NodeElement
               attr_accessor :direction, :size, :height, :style, :base_face, :offset
               attr_reader :node

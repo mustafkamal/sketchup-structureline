@@ -1,3 +1,4 @@
+require_relative '../owner/itb'
 module Mustafa
   module StructureLine
     module Event

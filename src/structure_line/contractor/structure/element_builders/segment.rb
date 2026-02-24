@@ -1,4 +1,6 @@
 require 'securerandom'
+require_relative '../../../utils/line_relation'
+require_relative '../element_builders/segment_calculation'
 
 module Mustafa
   module StructureLine

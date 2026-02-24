@@ -14,6 +14,7 @@ module Mustafa
       puts "Extension is reloaded"
     end
 
+    Sketchup.require(File.join(PLUGIN_DIR, "utils/constants"))
     Dir.glob(File.join(PLUGIN_DIR, "**/*.{rb,rbe}")).each { |f| Sketchup.require(f) }
 
   end

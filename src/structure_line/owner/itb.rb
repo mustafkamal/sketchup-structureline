@@ -1,3 +1,4 @@
+require_relative '../utils/json_processor'
 module Mustafa
   module StructureLine
     module Owner
@@ -20,10 +21,10 @@ module Mustafa
         private
 
         def establish_default_value
-          # Default value until there is an UI
+          # Default value until there is a UI
           @structure_type = STRUCTURE_TYPE_CONFINED_MASONRY
           @structure_style = STRUCTURE_STYLE_1
-          @structure_presentation = STRUCTURE_PRESENTATION_FULL
+          @structure_presentation = STRUCTURE_PRESENTATION_SIMPLE
         end
 
         def establish_structure_type

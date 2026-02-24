@@ -3,7 +3,6 @@ module Mustafa
     module Contractor
       module Structure
         module Element
-
           def get_transformation_axis(node, vector)
             # Local axes
             x_axis = vector.normalize

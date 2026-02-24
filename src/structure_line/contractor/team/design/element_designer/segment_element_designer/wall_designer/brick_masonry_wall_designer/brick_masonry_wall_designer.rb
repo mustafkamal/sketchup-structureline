@@ -1,3 +1,5 @@
+require_relative 'catalog'
+
 module Mustafa
   module StructureLine
     module Contractor

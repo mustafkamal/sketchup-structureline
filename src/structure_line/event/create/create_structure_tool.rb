@@ -1,3 +1,5 @@
+require_relative '../tool_helper/polyline'
+
 module Mustafa
   module StructureLine
     module Event

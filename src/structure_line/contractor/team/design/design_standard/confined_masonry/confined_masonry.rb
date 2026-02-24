@@ -1,3 +1,7 @@
+require_relative '../../element_designer/node_element_designer/column_designer/column_designer'
+require_relative '../../element_designer/segment_element_designer/rc_beam_designer/rc_beam_designer'
+require_relative '../../element_designer/segment_element_designer/wall_designer/wall_designer'
+
 module Mustafa
   module StructureLine
     module Contractor
@@ -31,7 +35,7 @@ module Mustafa
 
               def design_column
                 @columns.each_value do |column|
-                  #ColumnDesigner.design(column)
+                  ColumnDesigner.design(column)
                 end
               end
 
@@ -43,7 +47,7 @@ module Mustafa
 
               def design_ring_beam
                 @ring_beams.each_value do |ring_beam|
-                  #RcBeamDesigner.design(ring_beam)
+                  RcBeamDesigner.design(ring_beam)
                 end
               end
 

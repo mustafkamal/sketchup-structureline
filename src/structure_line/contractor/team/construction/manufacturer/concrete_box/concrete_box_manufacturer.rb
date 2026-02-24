@@ -1,3 +1,5 @@
+require_relative '../../../design/element_designer/component/concrete_box/description'
+
 module Mustafa
   module StructureLine
     module Contractor

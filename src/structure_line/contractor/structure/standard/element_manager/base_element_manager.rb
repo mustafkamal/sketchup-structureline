@@ -1,3 +1,4 @@
+require_relative '../../../../utils/json_processor'
 module Mustafa
   module StructureLine
     module Contractor

@@ -1,3 +1,4 @@
+require_relative '../../../design/element_designer/component/brick/description'
 module Mustafa
   module StructureLine
     module Contractor

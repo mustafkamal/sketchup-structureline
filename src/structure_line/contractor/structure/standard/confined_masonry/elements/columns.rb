@@ -1,3 +1,5 @@
+require_relative '../../element_manager/node_element_manager/column_manager'
+
 module Mustafa
   module StructureLine
     module Contractor

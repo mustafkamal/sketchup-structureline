@@ -4,8 +4,6 @@ module Mustafa
       module Structure
         module Element
           class BaseElement
-            include Element
-            include ElementBuilders
             include Utils::Constants
             attr_accessor :group, :components, :components
             attr_reader :entities, :id, :type, :drawing_points, :extrusion_face, :style, :presentation

@@ -1,3 +1,5 @@
+require_relative '../../../utils/constants'
+
 module Mustafa
   module StructureLine
     module Contractor

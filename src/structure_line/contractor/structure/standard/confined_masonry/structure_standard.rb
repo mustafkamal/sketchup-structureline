@@ -1,3 +1,5 @@
+require_relative 'catalog'
+
 module Mustafa
   module StructureLine
     module Contractor
@@ -44,11 +46,11 @@ module Mustafa
               end
 
               def get_element_style(element_name)
-                CONFINED_MASONRY_STYLE_CATALOG[@structure.style][element_name]
+                Catalog::CONFINED_MASONRY_STYLE_CATALOG[@structure.style][element_name]
               end
 
               def get_element_presentation(element_name)
-                CONFINED_MASONRY_PRESENTATION_CATALOG[@structure.presentation][element_name]
+                Catalog::CONFINED_MASONRY_PRESENTATION_CATALOG[@structure.presentation][element_name]
               end
 
               private

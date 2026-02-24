@@ -1,3 +1,5 @@
+require_relative '../base_element_manager'
+
 module Mustafa
   module StructureLine
     module Contractor

@@ -1,3 +1,5 @@
+require_relative '../../element_manager/segment_element_manager/rc_beam_manager'
+
 module Mustafa
   module StructureLine
     module Contractor

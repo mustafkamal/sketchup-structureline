@@ -1,3 +1,5 @@
+require_relative '../../../../../../environment/material/library'
+
 module Mustafa
   module StructureLine
     module Contractor

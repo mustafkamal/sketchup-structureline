@@ -1,3 +1,6 @@
+require_relative '../contractor/contractor_company'
+require_relative '../owner/itb'
+
 module Mustafa
   module StructureLine
     module Environment

@@ -1,3 +1,5 @@
+require_relative '../element'
+
 module Mustafa
   module StructureLine
     module Contractor
@@ -5,6 +7,8 @@ module Mustafa
         module Element
           module SegmentElement
             module CubeElement
+
+              include Element
 
               def get_drawing_points
                 return unless valid_geometry_input?

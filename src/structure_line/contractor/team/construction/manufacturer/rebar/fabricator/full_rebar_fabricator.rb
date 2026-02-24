@@ -1,3 +1,5 @@
+require_relative '../../../../design/calculation'
+
 module Mustafa
   module StructureLine
     module Contractor

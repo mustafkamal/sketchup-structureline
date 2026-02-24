@@ -1,3 +1,8 @@
+require_relative 'engineering/engineer'
+require_relative 'design/designer'
+require_relative 'drafting/drafter'
+require_relative 'construction/foreman'
+
 module Mustafa
   module StructureLine
     module Contractor

@@ -1,3 +1,5 @@
+require_relative 'segment_element'
+require_relative 'cube_element'
 module Mustafa
   module StructureLine
     module Contractor

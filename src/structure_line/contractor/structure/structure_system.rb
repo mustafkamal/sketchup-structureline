@@ -1,4 +1,9 @@
 require 'json'
+require_relative 'auxiliary/skeleton'
+require_relative 'auxiliary/bounding_box'
+require_relative 'auxiliary/temp_edge'
+require_relative 'element_builders/segment_manager'
+require_relative 'standard/catalog'
 
 module Mustafa
   module StructureLine

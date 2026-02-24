@@ -1,3 +1,5 @@
+require_relative 'structure_standard'
+
 module Mustafa
   module StructureLine
     module Contractor

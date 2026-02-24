@@ -1,4 +1,6 @@
 require 'forwardable'
+require_relative 'structure/structure_system'
+require_relative 'team/project_manager'
 
 module Mustafa
   module StructureLine

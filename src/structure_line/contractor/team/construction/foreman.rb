@@ -1,3 +1,6 @@
+require_relative 'fabricator/simple_fabricator'
+require_relative 'manufacturer/manufacturer'
+
 module Mustafa
   module StructureLine
     module Contractor
