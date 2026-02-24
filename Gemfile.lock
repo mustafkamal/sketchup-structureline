@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.25.5)
+    sketchup-api-stubs (0.7.10)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  minitest
+  sketchup-api-stubs
+
+BUNDLED WITH
+   2.5.14

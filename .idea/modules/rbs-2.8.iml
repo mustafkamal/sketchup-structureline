@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/rbs-2.8.2">
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/rbs-2.8.2/features" isTestSource="true" />
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/rbs-2.8.2/spec" isTestSource="true" />
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/rbs-2.8.2/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="ruby-3.3.7-p123" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.14, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.16.3, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.22.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v3.1.2.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="prime (v0.1.2, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.3.0, ruby-3.3.7-p123) [gem]" level="application" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>

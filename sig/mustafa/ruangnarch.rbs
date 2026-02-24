@@ -1,0 +1,11 @@
+module Mustafa
+  module StructureLine
+    PLUGIN_DIR: string
+    PLUGIN_ID: string
+
+    def self.create_ui: -> nil
+
+    def self.reload: ->nil
+
+  end
+end

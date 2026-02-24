@@ -1,0 +1,8 @@
+module Mustafa
+  module StructureLine
+    module Tools
+      class Polyline
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mustafa
+  module StructureLine
+    module Tools
+      def self.activate_polyline_tool: -> void
+    end
+  end
+end

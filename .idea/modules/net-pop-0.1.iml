@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/net-pop-0.1.2">
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/net-pop-0.1.2/features" isTestSource="true" />
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/net-pop-0.1.2/spec" isTestSource="true" />
+      <sourceFolder url="file://C:/Program Files/SketchUp/SketchUp 2025/SketchUp/Tools/gems/3.2.0/gems/net-pop-0.1.2/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="ruby-3.3.7-p123" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.6.3, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="power_assert (v3.0.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.3.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="test-unit (v3.7.7, ruby-3.3.7-p123) [gem]" level="application" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>
