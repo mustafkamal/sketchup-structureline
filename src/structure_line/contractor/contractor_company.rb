@@ -18,7 +18,6 @@ module Mustafa
         attr_reader :structure, :pm
 
         def initialize(itb =  nil)
-          puts "test github"
           @itb = itb
           establish_structure
           establish_project_manager
