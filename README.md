@@ -3,8 +3,6 @@
 A SketchUp extension that automates structure modeling.  
 You can check what types of structures are included here: *[link to the structure design standard]*.
 
-This extension is open‑source to encourage contributions from people of different backgrounds.
-
 For usage and feature demonstrations, see the [demo page](https://github.com/mustafkamal/sketchup-structureline/blob/main/demo/README.md)
 
 
@@ -14,7 +12,7 @@ If you would like to try it in your SketchUp environment, you can {instructions 
 
 
 ## How to Contribute
-There are various areas where you can contribute:
+This extension is open‑source to encourage contributions from people of different backgrounds. There are various areas where you can contribute:
 
 ### Architecture  
 - *[architecture_improvement_idea link]*
