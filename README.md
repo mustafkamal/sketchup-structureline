@@ -1,19 +1,17 @@
 # Structure Line
 
-**Structure Line** is a SketchUp extension that automates structure modeling.  
+A SketchUp extension that automates structure modeling.  
 You can check what types of structures are included here: *[link to the structure design standard]*.
 
 This extension is open‑source to encourage contributions from people of different backgrounds.
 
-For usage and feature demonstrations, see the **Demo Page**: *[link to the demo page]*.
+For usage and feature demonstrations, see the [demo page](https://github.com/mustafkamal/sketchup-structureline/blob/main/demo/README.md)
 
----
 
 ## How to Use in SketchUp
 This extension is **not yet available** in the SketchUp Extension Warehouse.  
 If you would like to try it in your SketchUp environment, you can {instructions to be added}.
 
----
 
 ## How to Contribute
 There are various areas where you can contribute:
