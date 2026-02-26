@@ -1,4 +1,4 @@
-This demo showcases the general features of this extension using the confined masonry structure. 
+This demo showcases the general features of this extension using the [confined masonry structure](https://github.com/mustafkamal/sketchup-structureline/tree/main/src/structure_line/contractor/structure/standard/confined_masonry) type. 
 
 ## Structure 
 
