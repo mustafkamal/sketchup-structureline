@@ -9,22 +9,22 @@ For usage and feature demonstrations, see the **Demo Page**: *[link to the demo 
 
 ---
 
-## 🚀 How to Use in SketchUp
+## How to Use in SketchUp
 This extension is **not yet available** in the SketchUp Extension Warehouse.  
 If you would like to try it in your SketchUp environment, you can {instructions to be added}.
 
 ---
 
-## 🤝 How to Contribute
+## How to Contribute
 There are various areas where you can contribute:
 
-### 🏛 Architecture  
+### Architecture  
 - *[architecture_improvement_idea link]*
 
-### 🏗 Engineering  
+### Engineering  
 - *[engineering_improvement_idea link]*
 
-### 💻 Programming  
+### Programming  
 - *[programming_improvement_idea link]*
 
 
