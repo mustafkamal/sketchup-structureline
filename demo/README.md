@@ -1,14 +1,8 @@
+This demo showcases the general features of this extension using the confined masonry structure. 
 
-This demo showcases the **confined masonry structure** and its available features.  
-For technical details, see the *[confined masonry standard page]*.
+## Structure 
 
----
-
-## Creating a Structure
-
-1. Click the **Create Structure** button in the extension menu.
-2. Pick any points — you'll see a live preview of the structure.
-3. Double‑click to automatically generate a 3D model.
+To create a structure, you can click the “Create Structure” button in the extension menu and pick any points you want. It will show the preview of the structure you will build. Double click to automatically create a 3D model representation of the structure.
 
 *{GIF: activating structure tool, clicking points, double clicking}*
 
@@ -16,10 +10,6 @@ The resulting 3D model is a grouped structure containing multiple entities.
 All segment collisions are handled automatically.
 
 *{GIF: clicking the structure group and showing entities}*
-
----
-
-## Segment Recalculation
 
 If a clicked point intersects an existing segment, the extension recalculates that segment automatically.
 
@@ -29,43 +19,23 @@ Press **W** to activate **Node Break**, which prevents recalculation when inters
 
 *{GIF: node break}*
 
----
-
-## Confined Masonry Controls
-
-### Key Commands
-- **1** → Do *not* create a column on that point  
-  Useful for non‑orthogonal segments.  
-  See *[confined masonry standard improvements]* for ideas.
-
-  *{GIF: pressing 1 and non‑orthogonal example}*
-
-- **2** → Do *not* create a wall for that segment  
-  *{GIF: pressing 2}*
-
----
-
-## Editing a Structure
-
-Right‑click the structure and choose **Edit Structure**.  
-This replaces the 3D model with editable lines.  
-Use the SketchUp Move tool to reposition segments.  
-Exiting the group automatically rebuilds the structure.
+Every structure you’ve made can be reposition if you right-click and click the ‘Edit Structure’ option. This will enter the structure group and replace the structure 3D model with a set of lines. You can use the native Move tool to move these lines and the structure will follow. If you exit the group, the structure will be rebuilt.
 
 *{GIF: structure edit}*
 
----
+## Command keys 
 
-## Structure Details
+Some structures have certain key commands that will determine its behaviour.
+For example if you press **1** for a confined masonry structure, it will not create a column on your next click
 
-The extension internally determines the real‑world components (bricks, mortar, rebar).  
-To generate these as 3D models:
+{Gif of pressing ‘1’ and non-orthogonal}
 
-1. Click **Create Structure Detail** in the menu  
-2. Follow the same process as before  
+If you press **2** it will not create a wall on your next click.
 
-This produces a full detailed model.
+{Gif of pressing ‘2’}
+
+## Components
+
+In the background, the extension has determined the components (bricks, mortar, rebar) that make up this structure in real life. If the user wishes to see these components in SketchUp (for rendering purpose or any other reason), they can click the ‘Create Structure Detail’ in the extension menu and do as above. This will create a full detailed 3D model of all the components that made up the structure.
 
 *{GIF: structure detail}*
-
-See the *[structure improvements page]* for future enhancements.
