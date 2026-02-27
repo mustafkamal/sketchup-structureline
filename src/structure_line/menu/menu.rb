@@ -1,3 +1,4 @@
+require_relative '../owner/itb'
 module Mustafa
   module StructureLine
     module Menu
@@ -5,6 +6,7 @@ module Mustafa
 
       include Utils::Constants
       include Environment
+      include Owner
 
       def create_ui
         return nil if file_loaded?(__FILE__) # Safeguard biar SketchUp ga nambah2in menu nya terus
@@ -15,7 +17,14 @@ module Mustafa
 
       def add_toolbar_menu
 				menu = UI.menu("Plugins").add_submenu("Structure Line")
-        menu.add_item("Create Structure") {Event::Create.activate(Sketchup.active_model)}
+        menu.add_item("Create Structure") {create_structure(STRUCTURE_PRESENTATION_SIMPLE)}
+        menu.add_item("Create Structure Detail") {create_structure(STRUCTURE_PRESENTATION_FULL)}
+      end
+
+      def create_structure(presentation)
+        itb = Itb.new
+        itb.structure_presentation = presentation
+        Event::Create.activate(Sketchup.active_model, itb)
       end
 
       def add_context_menu
@@ -23,8 +32,9 @@ module Mustafa
           entity = Sketchup.active_model.selection.first
           break unless entity_is_a_structure_group?(entity)
           menu.add_separator
+          itb = Itb.new(entity)
           model = Sketchup.active_model
-          handle_edit_structure_menu(menu, model, entity)
+          handle_edit_structure_menu(menu, model, itb)
           # handle_structure_styling_menu(menu, model)
           # handle_wall_opening_menu(menu, model)
 
@@ -35,8 +45,8 @@ module Mustafa
         entity.get_attribute(DICT_NAME, DICT_KEY_TYPE) == DICT_VALUE_STRUCTURE
       end
 
-      def handle_edit_structure_menu(menu, model, group)
-        menu.add_item("Edit Structure") {Event::Edit.activate(model, group)}
+      def handle_edit_structure_menu(menu, model, itb)
+        menu.add_item("Edit Structure") {Event::Edit.activate(model, itb)}
       end
 
       def handle_structure_styling_menu(menu, model)

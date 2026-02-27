@@ -13,9 +13,9 @@ module Mustafa
         def_delegators  :@contractor, :create_skeleton, :delete_skeleton, :begin_construction, :teardown_structure
         attr_reader :contractor
 
-        def initialize(model, group = nil)
+        def initialize(model, itb = nil)
           @model = model
-          @group = group
+          @itb = itb
           hire_contractor
         end
 
@@ -53,7 +53,7 @@ module Mustafa
         private
 
         def hire_contractor
-          @contractor = ContractorCompany.new(Itb.new(@group))
+          @contractor = ContractorCompany.new(@itb)
         end
 
       end

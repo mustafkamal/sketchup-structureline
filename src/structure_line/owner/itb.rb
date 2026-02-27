@@ -7,7 +7,8 @@ module Mustafa
         include Utils::JsonProcessor
         include Contractor::Structure::ElementBuilders
 
-        attr_reader :structure_type, :structure_style, :structure_presentation, :structure_group, :structure_segments
+        attr_accessor :structure_presentation
+        attr_reader :structure_type, :structure_style, :structure_group, :structure_segments
 
         def initialize(group = nil)
           return establish_default_value unless group
@@ -24,7 +25,7 @@ module Mustafa
           # Default value until there is a UI
           @structure_type = STRUCTURE_TYPE_CONFINED_MASONRY
           @structure_style = STRUCTURE_STYLE_1
-          @structure_presentation = STRUCTURE_PRESENTATION_SIMPLE
+          @structure_presentation = STRUCTURE_PRESENTATION_FULL
         end
 
         def establish_structure_type

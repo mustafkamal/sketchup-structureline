@@ -4,8 +4,8 @@ module Mustafa
       module Edit
         extend self
 
-        def activate(model, group)
-          @eo = Organizer.new(model, group)
+        def activate(model, itb)
+          @eo = Organizer.new(model, itb)
           @overlay = EditOverlay.new
           @observer = EditObserver.new(self)
           handle_activation_event

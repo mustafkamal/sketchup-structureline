@@ -4,8 +4,8 @@ module Mustafa
       module Create
         extend self
 
-        def activate(model)
-          @eo = Organizer.new(model)
+        def activate(model, itb)
+          @eo = Organizer.new(model, itb)
           @active = true
           setup_overlay
           activate_create_structure_tool

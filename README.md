@@ -1,7 +1,7 @@
 # Structure Line
 
 A SketchUp extension that automates structure modeling.  
-You can check what types of structures are included here: *[link to the structure design standard]*.
+You can check what types of structures are included [here](src/structure_line/contractor/structure/standard/README.md).
 
 For usage and feature demonstrations, see the [demo page](https://github.com/mustafkamal/sketchup-structureline/blob/main/demo/README.md)
 
