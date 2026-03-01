@@ -1,9 +1,9 @@
 ---
-name: Feature request
+name: Contributions in Architecture
 about: Suggest an idea for this project
 title: ''
-labels: ''
-assignees: ''
+labels: architecture, enhancement
+assignees: mustafkamal
 
 ---
 
