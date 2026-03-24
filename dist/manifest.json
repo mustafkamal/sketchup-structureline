@@ -1,0 +1,8 @@
+{
+  "name": "Structure Line",
+  "creator": "Mustafa Kamal",
+  "description": "A SketchUp extension to automate structure modeling",
+  "version": "1.0.0-dev",
+  "copyright": "2025-#{Date.today.year} - MIT License",
+  "url": "https://github.com/mustafkamal/sketchup-structureline"
+}
