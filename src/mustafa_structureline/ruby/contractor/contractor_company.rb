@@ -5,7 +5,6 @@ module Mustafa
     module Contractor
       class ContractorCompany
         include Structure
-        include Team
 
         extend Forwardable
 

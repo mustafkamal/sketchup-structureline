@@ -14,6 +14,7 @@ module Mustafa
 	
 	      def onOpenModel(model)
 					load_observer(model)
+					load_materials(model)
 	      end
 	
 	      def load_observer(model)

@@ -3,7 +3,7 @@ module Mustafa
   module StructureLine
     module Utils
       module JsonProcessor
-        include Contractor::Structure::ElementBuilders
+        include Structure::ElementBuilders
 
         def get_3d_point_from_json(array)
           Geom::Point3d.new(*array.map(&:to_f).map(&:mm))

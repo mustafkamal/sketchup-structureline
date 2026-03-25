@@ -1,5 +1,10 @@
 require_relative 'environment/app_observer'
+require_relative 'environment/state'
 require_relative 'ui/menu'
+require_relative 'utils/calculation'
+require_relative 'utils/constants'
+require_relative 'utils/json_processor'
+require_relative 'utils/line_relation'
 
 module Mustafa
   module StructureLine
