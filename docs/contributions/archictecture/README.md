@@ -3,7 +3,7 @@
 If you have an idea on how to expand this extension so that it can further help architects in general, please voice 
 it! Ideas like:
 
-- Improvements to any [existing structure type](../../../src/structure_line/contractor/structure/standard/README.md).
+- Improvements to any [existing structure type](../../../src/mustafa_structureline/contractor/structure/standard/README.md).
 - Suggestion of a new structure type like gypsum partition, glass partition, concrete slab, steel structure, or any 
   other structure that might help architects in general. 
 - Suggestion of a new feature to the extension that can further accelerate an architect's workflow.
