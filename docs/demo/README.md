@@ -1,6 +1,6 @@
 # Demo
 
-This demo showcases the general features of this extension using the [confined masonry structure](https://github.com/mustafkamal/sketchup-structureline/tree/main/src/structure_line/contractor/structure/standard/confined_masonry) type. The gifs might take a while to load.
+This demo showcases the general features of this extension using the [confined masonry structure](https://github.com/mustafkamal/sketchup-structureline/tree/main/src/mustafa_structureline/contractor/structure/standard/confined_masonry) type. The gifs might take a while to load.
 
 ## Structure 
 
