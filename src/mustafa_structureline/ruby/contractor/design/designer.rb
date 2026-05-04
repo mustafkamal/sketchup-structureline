@@ -14,21 +14,17 @@ module Mustafa
             STRUCTURE_TYPE_CONFINED_MASONRY => :design_confined_masonry_structure
           }
 
-          def initialize(structure)
-            @structure = structure
-          end
-
-          def design_structure
+          def design_structure(structure)
             # Detail drawing is when the there is no more collision between the elements of a structure
-            method = STRUCTURE_DESIGN_MAP[@structure.type]
+            method = STRUCTURE_DESIGN_MAP[structure.type]
             raise ArgumentError, "No design for this structure type" unless method
-            send(method)
+            send(method, structure)
           end
 
           private
 
-          def design_confined_masonry_structure
-            DesignStandard::ConfinedMasonry.design(@structure)
+          def design_confined_masonry_structure(structure)
+            DesignStandard::ConfinedMasonry.design(structure)
           end
 
         end

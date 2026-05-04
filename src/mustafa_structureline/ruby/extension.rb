@@ -20,7 +20,6 @@ module Mustafa
         # This method will only be triggered when SketchUp load the extension for the very first time
         setup_ui
         setup_app_observer
-        setup_contractor
       end
 
       def reload
@@ -35,10 +34,6 @@ module Mustafa
 
       def setup_app_observer
         Sketchup.add_observer(AppObserver)
-      end
-
-      def setup_contractor
-        CONTRACTOR = Contractor.new(self)
       end
 
     end

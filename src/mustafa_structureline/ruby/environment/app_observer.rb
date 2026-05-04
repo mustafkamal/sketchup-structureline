@@ -1,5 +1,6 @@
-require_relative 'observer/loader'
 require_relative 'material/loader'
+require_relative 'observer/loader'
+
 
 module Mustafa
   module StructureLine
@@ -8,16 +9,16 @@ module Mustafa
 				extend self
 
 				def onNewModel(model)
-					load_observer(model)
 					load_materials(model)
+					load_observers(model)
 	      end
 	
 	      def onOpenModel(model)
-					load_observer(model)
 					load_materials(model)
+					load_observers(model)
 	      end
 	
-	      def load_observer(model)
+	      def load_observers(model)
 					Observer::Loader.activate(model)
 				end
 
@@ -27,10 +28,6 @@ module Mustafa
 	
 	      def expectsStartupModelNotifications
 	        true
-	      end
-	
-	      def onQuit
-	        # execute onQuit tasks
 	      end
 
 			end

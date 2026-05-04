@@ -4,9 +4,6 @@ module Mustafa
       module Engineering
         class Engineer
 
-          def initialize(structure)
-            @structure = structure
-          end
 
         end
       end

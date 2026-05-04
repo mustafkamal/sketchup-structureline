@@ -1,3 +1,4 @@
+require 'date'
 require 'sketchup.rb'
 require 'extensions.rb'
 
@@ -10,7 +11,7 @@ module Mustafa
       PLUGIN_ID = File.basename(_file_, ".*")
       PLUGIN_DIR = File.join(File.dirname(_file_), PLUGIN_ID)
 
-      ex = SketchupExtension.new('Structure Line', File.join(PLUGIN_DIR, 'main'))
+      ex = SketchupExtension.new('Structure Line', File.join(PLUGIN_DIR, 'ruby', 'main'))
 
       ex.creator     = 'Mustafa Kamal' ## /!\ Auto-generated line, do not edit ##
       ex.description = 'A SketchUp extension to automate structure modeling' ## /!\ Auto-generated line, do not edit ##

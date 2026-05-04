@@ -1,4 +1,3 @@
-require_relative '../owner/itb'
 module Mustafa
   module StructureLine
     module Event
@@ -15,7 +14,6 @@ module Mustafa
 
         def initialize(model)
           @model = model
-          hire_contractor
         end
 
         def enter_structure_group
@@ -45,15 +43,6 @@ module Mustafa
           @model.select_tool(tool)
         end
 				
-				def release_contractor
-          #Report.release_contractor!
-				end
-
-        private
-
-        def hire_contractor
-          @contractor = ContractorCompany.new(@itb)
-        end
 
       end
     end

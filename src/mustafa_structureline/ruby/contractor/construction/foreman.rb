@@ -9,17 +9,19 @@ module Mustafa
           include Fabricator
           include Manufacturer
 
-          def initialize(structure)
-            @structure = structure
-          end
-
-          def build_structure
+          def build_structure(structure)
             # In order to make 3D models inside a nested group, it is better to make the elements 3D model
             # immediately after we establish its manager groups (dont establish the manager's groups all at once).
             # Sketchup's geometry operation sometimes will delete other groups in the same nested group.
-            @structure.each_element_manager do |element_manager|
+            structure.each_element_manager do |element_manager|
               establish_element_manager_group(element_manager)
               build_elements_inside_manager(element_manager)
+            end
+          end
+
+          def teardown_structure(structure)
+            structure.each_element do |element|
+              element.delete_3d_model
             end
           end
 

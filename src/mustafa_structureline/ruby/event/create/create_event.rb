@@ -1,12 +1,13 @@
 require_relative '../organizer'
+require_relative 'create_overlay'
+require_relative 'create_structure_tool'
 
 module Mustafa
   module StructureLine
     module Event
-      module Create
-        extend self
+      class CreateEvent
 
-        def activate(model)
+        def initialize(model)
           @eo = Organizer.new(model)
           @active = true
           setup_overlay
@@ -31,7 +32,7 @@ module Mustafa
 
         def setup_overlay
           # We want the overlay to be enabled only when the tool is suspended so that the structure outline can be
-          # drawn even if the user activated another tool.
+          # drawn even if the user activated another tool (e.g. when orbitin or panning).
           @overlay = CreateOverlay.new
           @eo.setup_overlay(@overlay, false)
         end

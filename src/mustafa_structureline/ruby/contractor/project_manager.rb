@@ -1,58 +1,37 @@
 require_relative 'construction/foreman'
-require_relative 'construction/demolitionist'
-require_relative 'engineering/engineer'
 require_relative 'design/designer'
 require_relative 'drafting/drafter'
+require_relative 'engineering/engineer'
 
 module Mustafa
   module StructureLine
     module Contractor
       class ProjectManager
 
-        include Engineering
+        include Construction
         include Design
         include Drafting
-        include Construction
+        include Engineering
 
-        def initialize(structure)
-          @structure = structure
-          hire_project_team
+        def initialize
+          @engineer = Engineer.new
+          @designer = Designer.new
+          @drafter = Drafter.new
+          @foreman = Foreman.new
         end
 
-        def draw_structure_outline(view, preview_point = nil)
-          @drafter.make_outline_drawings(view, preview_point)
+        def draw_structure_outline(structure, view, preview_point = nil)
+          @drafter.make_outline_drawings(structure, view, preview_point)
         end
 
-        def begin_construction
-          make_detail_drawing
-          make_structure_design
-          build_structure
+        def begin_construction(structure)
+          @drafter.make_detail_drawing(structure)
+          @designer.design_structure(structure)
+          @foreman.build_structure(structure)
         end
 
-        def teardown_structure
-          @demolitionist.teardown_structure
-        end
-
-        private
-
-        def hire_project_team
-          @engineer = Engineer.new(@structure)
-          @designer = Designer.new(@structure)
-          @drafter = Drafter.new(@structure)
-          @foreman = Foreman.new(@structure)
-          @demolitionist = Demolitionist.new(@structure)
-        end
-
-        def make_detail_drawing
-          @drafter.make_detail_drawing
-        end
-
-        def make_structure_design
-          @designer.design_structure
-        end
-
-        def build_structure
-          @foreman.build_structure
+        def teardown_structure(structure)
+          @foreman.teardown_structure(structure)
         end
 
       end

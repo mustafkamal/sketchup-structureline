@@ -1,4 +1,3 @@
-require_relative '../utils/ls/json_processor'
 module Mustafa
   module StructureLine
     module Owner

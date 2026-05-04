@@ -1,5 +1,5 @@
-require_relative '../event/create/create'
-require_relative '../event/edit/edit'
+require_relative '../event/event'
+
 
 module Mustafa
   module StructureLine
@@ -7,8 +7,8 @@ module Mustafa
       module Menu
         extend self
 
+        include Event
         include Utils::Constants
-        include Environment
         include Owner
 
         def setup
@@ -17,8 +17,16 @@ module Mustafa
         end
 
         def setup_toolbar_menu
-          menu = UI.menu("Plugins").add_submenu("Structure Line")
-          menu.add_item("Create Structure") {Event::Create.activate(Sketchup.active_model)}
+          setup_structureline_menu
+          setup_create_menu
+        end
+
+        def setup_structureline_menu
+          @menu = UI.menu("Plugins").add_submenu("Structure Line")
+        end
+
+        def setup_create_menu
+          @menu.add_item("Create Structure") {activate_create_event}
         end
 
         def setup_context_menu
